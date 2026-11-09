@@ -1,5 +1,22 @@
+# Render with: QUARTO_PYTHON=.venv/bin/python quarto render
 project:
   title: "2026-11-13_DEPTH-philtransexplorer"
 
+execute:
+  echo: false
+  warning: false
 
-
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    width: 1280
+    height: 720
+    margin: 0.05
+    slide-number: c/t
+    embed-resources: true
+    transition: none
+    background-transition: none
+    center: false
+    hash: true
+    menu: false
+    html-math-method: plain

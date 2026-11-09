@@ -1,0 +1,78 @@
+/*-- scss:defaults --*/
+$body-bg: #fbfaf6;
+$body-color: #2b3324;
+$link-color: #4a6a2e;
+$presentation-font-size-root: 39px;
+$presentation-h2-font-size: 1.45em;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$presentation-heading-font: Georgia, "Times New Roman", serif;
+$presentation-heading-color: #2b3324;
+$presentation-heading-font-weight: 600;
+
+/*-- scss:rules --*/
+$sage: #a5b097;
+$olive: #414c30;
+$green: #5b7f3a;
+$alert: #9c2f2f;
+$hairline: #dcdfd4;
+$muted: #5f6856;
+
+.reveal h2 { line-height: 1.15; margin-bottom: 0.5em; }
+.reveal .slide-number { color: $muted; background: transparent; font-size: 16px; }
+.reveal p, .reveal li { line-height: 1.32; }
+.reveal .muted { color: $muted; }
+.reveal .small { font-size: 0.68em; }
+.reveal .caption-line { font-size: 0.56em; color: $muted; margin-top: 0.4em; }
+
+.reveal .title-logo { width: 320px; margin: 0 0 1em; display: block; }
+.reveal .title-kicker { color: $muted; font-size: 0.8em; }
+
+.reveal .scan { border: 1px solid $hairline; display: block; width: 100%; margin: 0.2em 0; }
+.reveal .shot { border: 1px solid $hairline; display: block; max-height: 520px; margin: 0 auto; }
+
+.reveal .quote {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95em;
+  border-left: 5px solid $sage;
+  padding-left: 0.7em;
+  margin: 0.5em 0;
+}
+
+.reveal table.compare { width: 100%; border-collapse: collapse; font-size: 0.86em; margin: 0.3em 0 0; }
+.reveal table.compare th {
+  text-align: left; font-size: 0.72em; color: $muted; font-weight: 600;
+  border-bottom: 2px solid $sage; padding: 0.3em 0.5em 0.3em 0;
+}
+.reveal table.compare td { padding: 0.55em 0.5em 0.55em 0; border-bottom: 1px solid $hairline; vertical-align: top; }
+.reveal table.compare .wrong { color: $alert; font-weight: 700; }
+
+.reveal .stats { display: flex; gap: 1.2em; margin: 0.9em 0 0.7em; }
+.reveal .stat { flex: 1; border-top: 3px solid $sage; padding-top: 0.4em; }
+.reveal .stat .n { font-size: 2.1em; font-weight: 700; line-height: 1.05; }
+.reveal .stat .l { font-size: 0.68em; color: $muted; line-height: 1.25; display: block; margin-top: 0.3em; }
+.reveal .stat.alert { border-top-color: $alert; }
+.reveal .stat.alert .n { color: $alert; }
+
+.reveal .flow { display: flex; align-items: stretch; gap: 0; margin: 0.35em 0 0.2em; }
+.reveal .step {
+  flex: 1; background: #eef0e8; border-radius: 4px; padding: 0.5em 0.5em;
+  font-size: 0.66em; line-height: 1.25;
+}
+.reveal .step b { display: block; font-size: 1.14em; margin-bottom: 0.2em; }
+.reveal .step.ai { background: #f4e7e4; }
+.reveal .arrow { align-self: center; padding: 0 0.28em; color: $muted; font-size: 0.8em; }
+.reveal .flow-label { font-size: 0.66em; font-weight: 700; margin: 0.8em 0 0; }
+
+.reveal .pending-tag {
+  display: inline-block; background: $alert; color: #fff; font-size: 0.5em; font-weight: 700;
+  letter-spacing: 0.05em; padding: 0.15em 0.6em; border-radius: 3px; vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.reveal .awaiting { color: $alert; font-style: italic; }
+.reveal .prompt {
+  font-family: Menlo, Consolas, monospace; font-size: 0.66em; line-height: 1.4;
+  background: #eef0e8; padding: 0.7em 0.9em; border-radius: 4px;
+}
+.reveal .prompt mark { background: #f1d4cd; color: inherit; padding: 0 0.15em; }
+.reveal .extracted { font-family: Georgia, "Times New Roman", serif; }
+.reveal .extracted li { margin-bottom: 0.3em; }
