@@ -1,0 +1,9 @@
+.venv/
+_site/
+.quarto/
+_freeze/
+*_files/
+*.html
+/.jupyter_cache/
+
+/.quarto/
